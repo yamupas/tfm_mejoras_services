@@ -20,6 +20,7 @@ namespace ZMEJ
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.UseUrls("http://*:9002");
                     webBuilder.UseStartup<Startup>();
                 });
     }
